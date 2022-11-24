@@ -3,3 +3,5 @@ requests
 chardet
 future
 six
+pandas
+numpy
