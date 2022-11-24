@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # flags
-nr_of_crawls = 10
+nr_of_crawls = 100
 
 # read-in list of ids to crawl
 path_to_split_crawls = './SplitCrawl/'
@@ -15,7 +15,6 @@ id_splits = np.linspace(0, len(id_list), nr_of_crawls).round()
 
 # create separate folders for each id split
 list_nr = 0
-os.mkdir(path_to_split_crawls)
 for i in id_splits[0:-1]:
     print('Processing split: ' + str(list_nr))
     new_list = id_list.loc[list_nr:id_splits[list_nr+1]]
