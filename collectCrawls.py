@@ -4,7 +4,7 @@ import os
 import sqlite3
 
 # read-in list of ids to crawl
-path_to_split_crawls = os.getcwd() + '/SplitCrawl/'
+path_to_split_crawls = os.getcwd() + '/40kCrawl/SplitCrawl/'
 nr_of_crawls = len(os.listdir(path_to_split_crawls))
 articleMeta_df = pd.DataFrame()
 docStatus_df = pd.DataFrame()
