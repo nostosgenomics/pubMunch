@@ -1931,7 +1931,7 @@ class ElsevierApiCrawler(Crawler, ElsevierCrawlerMixin):
 
     def crawl(self, url):
         delayTime = crawlDelays["elsevier-api"]
-	pdfUrl = None
+        pdfUrl = None
         if "%2F" in url:
             parts = url.split("%2F")
         else:
